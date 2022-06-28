@@ -13,18 +13,20 @@ end
   
 local function readEnvironments(meta)
   local env = meta['environments']
-  if tisarray(env) then 
-    -- read an array of strings
-    for i,v in ipairs(env) do        
-      local value = pandoc.utils.stringify(v)
-      classEnvironments[value] = value
-    end
-  else
-    -- read key value pairs
-    for k,v in pairs(env) do
-      local key = pandoc.utils.stringify(k)
-      local value = pandoc.utils.stringify(v)
-      classEnvironments[key] = value
+  if env ~= nil then
+    if tisarray(env) then 
+      -- read an array of strings
+      for i,v in ipairs(env) do        
+        local value = pandoc.utils.stringify(v)
+        classEnvironments[value] = value
+      end
+    else
+      -- read key value pairs
+      for k,v in pairs(env) do
+        local key = pandoc.utils.stringify(k)
+        local value = pandoc.utils.stringify(v)
+        classEnvironments[key] = value
+      end
     end
   end
 end

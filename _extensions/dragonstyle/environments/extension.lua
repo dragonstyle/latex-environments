@@ -27,8 +27,6 @@ local function readEnvironments(meta)
       classEnvironments[key] = value
     end
   end
-
-  quarto.utils.dump(classEnvironments)
 end
 
 local function writeEnvironments(divEl)

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This is Quarto extension that enables `divs` to be output as a custom environment in LaTeX. This is useful when you'd like to share content between LaTeX and other formats, but need the content to be placed in an environment when emitting LaTeX.
+This Quarto extension that enables `divs` to be output as a custom environment in LaTeX. This is useful when you'd like to share content between LaTeX and other formats, but need the content to be placed in an environment when emitting LaTeX.
 
 ## Installation
 

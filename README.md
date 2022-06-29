@@ -38,6 +38,7 @@ environments: [program]
 
 :::{.program}
 The contents of this div will be output in a `program`
-latex environment, but will appear in HTML (and any other output format as a simple div with the class `program`)
+latex environment, but will appear in HTML (and any other output 
+format as a simple div with the class `program`)
 :::
 ```
